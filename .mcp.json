@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "maven-tools-mcp": {
+      "args": [
+        ".chaos-engine/tool.py",
+        "maven-tools-mcp"
+      ],
+      "argsWindows": [
+        "-3",
+        ".chaos-engine/tool.py",
+        "maven-tools-mcp"
+      ],
+      "command": "python3",
+      "commandWindows": "py",
+      "cwd": "."
+    }
+  }
+}

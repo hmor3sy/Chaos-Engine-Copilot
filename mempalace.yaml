@@ -1,0 +1,69 @@
+wing: testtest
+rooms:
+- name: allure_report
+  description: Files from allure-report/
+  keywords:
+  - allure_report
+  - allure-report
+- name: allure_results
+  description: Files from allure-results/
+  keywords:
+  - allure_results
+  - allure-results
+- name: execution_summary
+  description: Files from execution-summary/
+  keywords:
+  - execution_summary
+  - execution-summary
+- name: extent_reports
+  description: Files from extent-reports/
+  keywords:
+  - extent_reports
+  - extent-reports
+- name: performancereport
+  description: Files from performanceReport/
+  keywords:
+  - performancereport
+  - performancereport
+- name: src
+  description: Files from src/
+  keywords:
+  - src
+  - src
+- name: target
+  description: Files from target/
+  keywords:
+  - target
+  - target
+- name: design
+  description: Files from assets/
+  keywords:
+  - design
+  - assets
+- name: research
+  description: Files from references/
+  keywords:
+  - research
+  - references
+- name: testing
+  description: Files from test/
+  keywords:
+  - testing
+  - test
+- name: general
+  description: Files that don't fit other rooms
+  keywords: []
+exclude_patterns:
+  - 'mempalace.yaml'
+  - '.memory/**'
+  - 'graphify-out/**'
+  - '.chaos-engine/**'
+  - '.chaos-engine-runtime/**'
+  - '.chaos-engine-state/**'
+  - 'plugins/chaos-engine/**'
+  - 'plugins/caveman/**'
+  - 'plugins/ponytail/**'
+  - 'plugins/icm-architect/**'
+  - '**/skills/chaos-engine/**'
+  - '.claude/agents/chaos-engine-*'
+  - '.codex/agents/chaos-engine-*'

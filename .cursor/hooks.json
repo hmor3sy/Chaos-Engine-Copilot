@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "hooks": {
+    "beforeReadFile": [
+      {
+        "command": "py -3 .chaos-engine/hooks/receipt_shim.py ensure --host cursor",
+        "timeout": 10
+      }
+    ],
+    "beforeShellExecution": [
+      {
+        "command": "py -3 .chaos-engine/hooks/receipt_shim.py ensure --host cursor",
+        "timeout": 10
+      }
+    ]
+  }
+}

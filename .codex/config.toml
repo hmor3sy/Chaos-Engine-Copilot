@@ -1,0 +1,9 @@
+# CHAOSENGINE:START
+
+[mcp_servers."maven-tools-mcp"]
+command = "python3"
+args = [".chaos-engine/tool.py", "maven-tools-mcp"]
+commandWindows = "py"
+argsWindows = ["-3", ".chaos-engine/tool.py", "maven-tools-mcp"]
+cwd = "."
+# CHAOSENGINE:END

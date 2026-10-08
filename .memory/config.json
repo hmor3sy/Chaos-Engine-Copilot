@@ -1,0 +1,11 @@
+{
+  "memory": {
+    "autoIndex": true,
+    "defaultTokenBudget": 2000
+  },
+  "project": {
+    "id": "project.testtest",
+    "name": "Testtest"
+  },
+  "version": 5
+}
