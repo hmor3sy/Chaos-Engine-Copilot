@@ -12,7 +12,7 @@
         "./chaos-engine"
       ],
       "source": "./plugins/chaos-engine",
-      "version": "1.0.915014856"
+      "version": "1.0.929937301"
     },
     {
       "description": "Ultra-compressed communication mode.",

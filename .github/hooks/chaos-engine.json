@@ -2,72 +2,72 @@
   "hooks": {
     "agentStop": [
       {
-        "bash": "node .chaos-engine/hooks/launch.js copilot",
-        "powershell": "node .chaos-engine/hooks/launch.js copilot",
+        "bash": "node .chaos-engine/hooks/launch.js copilot agentStop",
+        "powershell": "node .chaos-engine/hooks/launch.js copilot agentStop",
         "timeoutSec": 30,
         "type": "command"
       }
     ],
     "postToolUse": [
       {
-        "bash": "node .chaos-engine/hooks/launch.js copilot",
-        "powershell": "node .chaos-engine/hooks/launch.js copilot",
+        "bash": "node .chaos-engine/hooks/launch.js copilot postToolUse",
+        "powershell": "node .chaos-engine/hooks/launch.js copilot postToolUse",
         "timeoutSec": 30,
         "type": "command"
       }
     ],
     "postToolUseFailure": [
       {
-        "bash": "node .chaos-engine/hooks/launch.js copilot",
-        "powershell": "node .chaos-engine/hooks/launch.js copilot",
+        "bash": "node .chaos-engine/hooks/launch.js copilot postToolUseFailure",
+        "powershell": "node .chaos-engine/hooks/launch.js copilot postToolUseFailure",
         "timeoutSec": 30,
         "type": "command"
       }
     ],
     "preCompact": [
       {
-        "bash": "node .chaos-engine/hooks/launch.js copilot",
-        "powershell": "node .chaos-engine/hooks/launch.js copilot",
+        "bash": "node .chaos-engine/hooks/launch.js copilot preCompact",
+        "powershell": "node .chaos-engine/hooks/launch.js copilot preCompact",
         "timeoutSec": 30,
         "type": "command"
       }
     ],
     "preToolUse": [
       {
-        "bash": "node .chaos-engine/hooks/launch.js copilot",
-        "powershell": "node .chaos-engine/hooks/launch.js copilot",
+        "bash": "node .chaos-engine/hooks/launch.js copilot preToolUse",
+        "powershell": "node .chaos-engine/hooks/launch.js copilot preToolUse",
         "timeoutSec": 30,
         "type": "command"
       }
     ],
     "sessionEnd": [
       {
-        "bash": "node .chaos-engine/hooks/launch.js copilot",
-        "powershell": "node .chaos-engine/hooks/launch.js copilot",
+        "bash": "node .chaos-engine/hooks/launch.js copilot sessionEnd",
+        "powershell": "node .chaos-engine/hooks/launch.js copilot sessionEnd",
         "timeoutSec": 30,
         "type": "command"
       }
     ],
     "sessionStart": [
       {
-        "bash": "node .chaos-engine/hooks/launch.js copilot",
-        "powershell": "node .chaos-engine/hooks/launch.js copilot",
+        "bash": "node .chaos-engine/hooks/launch.js copilot sessionStart",
+        "powershell": "node .chaos-engine/hooks/launch.js copilot sessionStart",
         "timeoutSec": 30,
         "type": "command"
       }
     ],
     "subagentStop": [
       {
-        "bash": "node .chaos-engine/hooks/launch.js copilot",
-        "powershell": "node .chaos-engine/hooks/launch.js copilot",
+        "bash": "node .chaos-engine/hooks/launch.js copilot subagentStop",
+        "powershell": "node .chaos-engine/hooks/launch.js copilot subagentStop",
         "timeoutSec": 30,
         "type": "command"
       }
     ],
     "userPromptSubmitted": [
       {
-        "bash": "node .chaos-engine/hooks/launch.js copilot",
-        "powershell": "node .chaos-engine/hooks/launch.js copilot",
+        "bash": "node .chaos-engine/hooks/launch.js copilot userPromptSubmitted",
+        "powershell": "node .chaos-engine/hooks/launch.js copilot userPromptSubmitted",
         "timeoutSec": 30,
         "type": "command"
       }
