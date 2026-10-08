@@ -136,7 +136,7 @@
     "hooks/receipt_shim.py": "abc7c881de33e752dce9c0d4e6edf7d212020674d1bff4bac106a560be15228a",
     "hooks/reflection.py": "eab6ff0abff696b05c6cc832a009e496edddf065aa79a590ee8c8ff76727b278",
     "hooks/retrieve_justification.py": "d340ddee1ec20e7fe5f9b7c85b1c8fca5d8b603edf8529b4115cf5574caee08e",
-    "hosts.py": "9499dfc8128129c9a5c4a58b2ee6bfa99a4b11e5205a3f138e43a0528c38d542",
+    "hosts.py": "d6eddd0d226480d27ed6408b859f15e12878ace19d2d149e65c9976c4ac2567e",
     "identity.md": "3608a6b4a8b623f4cdf70493ea9c00482fdb0eae3174f07924f73f02e4b733e7",
     "identity_md.py": "75de0b033e98a88f64fb51727bc8a408b7cadde33632a88f9db4e42c9fd4ce86",
     "insight_extract.py": "a79536ac514f528f8f2af2133f23e3a8d4357f83eb61a616ff63cd1afd94dd57",
@@ -348,7 +348,7 @@
   "schemaVersion": 1,
   "source": {
     "branchSha256": "0d6e4079e36703ebd37c00722f5891d28b0e2811dc114b129215123adcce3605",
-    "commit": "376db79512c3296e60fbd8e5baa7205d1627526d",
+    "commit": "92359245cea4f37617579249002be0c67ec561b1",
     "kind": "git-digest",
     "repositorySha256": "784908b613872582bc8185e13b6132a40ace924b406c1b60fa86c1d45eebd135"
   }
