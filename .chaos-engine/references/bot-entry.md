@@ -4,6 +4,16 @@ Entry point for agents that auto-load nothing from the checkout and run no
 ChaosEngine hooks: Grok Bot, custom GPTs (OpenAI GPTs, Assistants), Claude
 Projects, and any other independent bot. `AGENTS.md` is not read for you.
 
+## No `.chaos-engine/` yet
+
+- Fresh clone: install from a copy of its own `chaos-engine/` kept outside
+  the project (source and project must be disjoint), pinned to HEAD:
+  `cp -r chaos-engine ../ce-src && python3 chaos-engine/install.py install --project . --source ../ce-src --commit "$(git rev-parse HEAD)"` (repo-only: run in the source checkout)
+  (add `--with-<add-on>` flags as needed; `install.py addons --project .`
+  lists them). Expect a few minutes for the first store index.
+- Linked worktree: install in the primary checkout, then
+  `python3 <primary>/.chaos-engine/worktree_overlay.py materialize --primary <primary> --session <worktree>`.
+
 ## Every task, before discovery
 
 1. With a shell: run `python3 .chaos-engine/tool.py entry` and follow what it
@@ -23,6 +33,13 @@ context summary or compaction: CLI hosts re-inject the cards on SessionStart
 and PreCompact, so a bot must do it itself. Keep one delivery per thread and write a handoff note (state, open PRs,
 next step) at each delivery boundary instead of carrying a long transcript.
 
+## Keep going
+
+Work the queue to the end without waiting for "proceed": after each step or
+delivery, start the next queued item. A turn that ends while CI runs must leave
+a wake (a PR-scoped CI listener) whose prompt resumes the queue; a host whose
+scheduled runs cannot create listeners hands that to the parent.
+
 ## After each delivery
 
 CLI hosts' Stop hook requires the Learning Session after a confirmed delivery
@@ -30,6 +47,11 @@ CLI hosts' Stop hook requires the Learning Session after a confirmed delivery
 [self-improve](../skills/self-improve/SKILL.md) once per delivery, then run
 `python3 .chaos-engine/tool.py maintain` to fast-forward, reinstall, and
 re-check doctor before the next task.
+An older overlay can record a git-digest source without a repository; its
+`maintain` then stops at "repository must be an explicit GitHub
+owner/repository" after the fast-forward. Reinstall once with
+`python3 .chaos-engine/bootstrap.py --project . --repository OWNER/REPO --branch BRANCH --distribution portable`;
+newer overlays recover on their own.
 
 ## Make it automatic
 
